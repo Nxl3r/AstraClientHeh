@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nova Client</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud">
+  <div class="logo">NOVA CLIENT</div>
+  <div class="info">
+    FPS: <span id="fps">0</span><br>
+    Ping: <span id="ping">--</span> ms
+  </div>
+</div>
+
+<div id="menu">
+  <h1>Nova Client</h1>
+  <button onclick="toggleHUD()">Toggle HUD</button>
+  <button onclick="toggleFullScreen()">Fullscreen</button>
+  <button onclick="toggleMotionBlur()">Motion Blur</button>
+</div>
+
+<canvas id="game"></canvas>
+
+<script src="client.js"></script>
+</body>
+</html>
